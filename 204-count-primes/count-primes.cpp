@@ -5,7 +5,7 @@ public:
         if(n<=1){
             return 0;
         }
-        arr[0]=arr[1]=false;
+        
         for(int i=2;i*i<=n;i++){
             if(arr[i]){
                 for(int p=i*i;p<n;p+=i){
