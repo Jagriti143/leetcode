@@ -17,7 +17,7 @@ public:
         return ans;
     }
 
-private:
+
     void traverse(TreeNode* node, vector<int>& ans) {
         if (!node) {
             return; 
