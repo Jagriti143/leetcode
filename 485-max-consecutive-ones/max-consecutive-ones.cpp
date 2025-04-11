@@ -5,15 +5,14 @@ public:
         int i=0;
         int n=nums.size();
         while(i<n){
-            int count=0;
-            while(i<n && nums[i]==1){
-                count++;
+            int cnt=0;
+            while(i<n &&nums[i]==1){
+                cnt++;
                 i++;
             }
-            ans=max(count,ans);
             i++;
+            ans=max(cnt,ans);
         }
-        return ans;
-        
+       return ans;
     }
 };
