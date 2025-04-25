@@ -23,7 +23,5 @@ public:
                 matrix[j][col[i]]=0;
             }
         }
-        
-        
     }
 };
