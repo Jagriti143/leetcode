@@ -4,10 +4,10 @@ public:
         int n=nums.size();
         int i=0;
         int j=1;
-        while(nums.size()>j){
+        while(j<nums.size() ){
             if(nums[i]==nums[j]){
-                nums.erase(nums.begin()+j);
-
+                nums.erase(nums.begin()+i);
+                
             }else{
                 i++;
                 j++;
