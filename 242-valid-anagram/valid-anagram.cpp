@@ -6,6 +6,21 @@ public:
         if(m!=n){
             return false;
         }
+        map<char,int> mp;
+        for(int i=0;i<m;i++){
+            mp[s[i]]++;
+        }
+        for(int i=0;i<n;i++){
+           if(mp.find(t[i]) ==mp.end()){
+                return false;
+            }else{
+                mp[t[i]]--;
+                if(mp[t[i]]==0){
+                    mp.erase(t[i]);
+                }
+            }
+        }
+        return !mp.empty()? false:true;
         // map<char,int> mp;
         // map<char,int> p;
         
@@ -21,7 +36,7 @@ public:
         //     }
         // }
         // return true;
-        sort(s.begin(),s.end());
+        /*sort(s.begin(),s.end());
         sort(t.begin(),t.end());
         int l=0;
         int r=0;
@@ -34,5 +49,7 @@ public:
             r++;
         }
         return true;
+        */
+
     }
 };
