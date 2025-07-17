@@ -9,9 +9,11 @@ public:
             int digit = temp % 10;
             sum += pow(digit, 2);
             temp /= 10;
+            
         }
         n = sum;
+       
     }
-    return n == 1;
+    return n==1;
     }
 };
