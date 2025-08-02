@@ -4,7 +4,7 @@ public:
         int n=nums.size();
         vector<int> arr;
          unordered_map<int,int> mp;
-        /*set<int> st;
+        set<int> st;
         for(int i=0;i<n;i++){
            st.insert(nums[i]);
         }
@@ -13,7 +13,8 @@ public:
             nums[index++] = x; 
         }
         return index;
-        */
+        
+        
         /*int cnt=0;
         for(int i=1;i<n;i++){
             if(nums[i]!=nums[cnt]){
@@ -24,7 +25,7 @@ public:
         return cnt+1;
         */
 
-        for(int i=0;i<n;i++){
+        /*for(int i=0;i<n;i++){
             mp[nums[i]]++;
         }
         for(auto x: mp){
@@ -36,5 +37,6 @@ public:
     }
     
         return arr.size();
+        */
     }
 };
